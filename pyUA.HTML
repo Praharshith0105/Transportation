@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pyua.css">
+    <title>Payment Gateway</title>
+</head>
+<body>
+
+<button onclick="openPaymentDialog()">Choose Payment</button>
+
+<div id="paymentDialog" class="dialog">
+    <div class="dialog-content">
+        <span class="close" onclick="closePaymentDialog()">&times;</span>
+        <h2>Select Payment Method</h2>
+        <label>
+            <input type="radio" name="paymentMethod" value="creditCard">
+            Pay via Credit Card
+        </label>
+        <label>
+            <input type="radio" name="paymentMethod" value="cash">
+            Pay via Cash
+        </label>
+        <button onclick="processPayment()">Process Payment</button>
+    </div>
+</div>
+
+<script src="pyua.js"></script>
+</body>
+</html>

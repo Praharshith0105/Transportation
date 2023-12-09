@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styless.css">
+  <title>Service Review</title>
+  <style>
+    h1{
+        color: #3498db;
+    }
+    body {
+        background-color: #7dad8d; 
+        margin: 0; 
+        padding: 0; 
+    }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Service Review</h1>
+    <div id="reviews-container"></div>
+    <div id="review-form">
+      <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Leave a Review</h2>
+      <ul>
+        <li>
+      <label for="rating">Ratings</label>
+      <input type="number" id="rating" min="1" max="5" required>
+        </li>
+        </ul>
+
+        <ul>
+            <li>
+                <label for="suggestions">Suggestions:</label>
+                <textarea id="suggestions" rows="4"></textarea>
+                <button onclick="submitReview()">Submit Review</button>
+            </li>
+        </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

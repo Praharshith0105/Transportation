@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylee.css">
+    <title>Sign up Page</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign up</h1>
+        <form id="loginForm">
+            <label for="email">Email</label>
+            <input type="text" id="Email" required>
+
+            <label for="password">Set a Password:</label>
+            <input type="password" id="password" required>
+
+            
+
+            <button type="submit">Sign in</button>
+        </form>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const loginForm = document.getElementById('loginForm');
+
+    loginForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        // Your login validation logic here
+
+        // For demonstration purposes, just alert success
+        alert('Account created!!');
+    });
+});
+    </script>
+</body>
+</html>
